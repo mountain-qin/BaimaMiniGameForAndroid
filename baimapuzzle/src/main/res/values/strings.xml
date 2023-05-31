@@ -1,0 +1,10 @@
+<resources>
+    <string name="baima_puzzle">拜玛拼图</string>
+    <string name="empty">空</string>
+    <string name="row">行</string>
+    <string name="column">列</string>
+    <string name="adjust_order">调整顺序</string>
+    <string name="disrupt_order">打乱顺序</string>
+    <string name="order_disrupted">顺序已经打乱。</string>
+    <string name="order_adjusted">顺序已经调整好。</string>
+</resources>

@@ -1,2 +1,3 @@
 rootProject.name='BaimaMiniGame'
 include ':app'
+include ':baimapuzzle'
