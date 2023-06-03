@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SupportAuthor</string>
+    <string name="we_chat_collection_code">微信收款码</string>
+    <string name="qr_code_image">二维码图片</string>
+    <string name="alipay_collection_code">支付宝收款码</string>
+    <string name="save_to_album">保存到相册</string>
+    <string name="alipay_collection_code_of_the_author">作者支付宝收款码</string>
+    <string name="we_chat_collection_code_of_the_author">作者微信收款码</string>
+    <string name="image_saved_successfully">图片保存成功</string>
+    <string name="click_qr_code_image_open_scan_scan">点击二维码图片打开扫一扫</string>
+    <string name="image_save_failed">图片保存失败</string>
+</resources>

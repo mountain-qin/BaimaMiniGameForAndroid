@@ -1,3 +1,3 @@
 rootProject.name='BaimaMiniGame'
-include ':app'
+include ':app', ':bgmsound', ':supportauthor'
 include ':baimapuzzle'

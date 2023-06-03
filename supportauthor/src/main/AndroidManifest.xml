@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baima.supportauthor">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application>
+        <activity android:name=".SupportAuthorAlipayCollectionCodeActivity"></activity>
+        <activity android:name=".SupportAuthorWeChatCollectionCodeActivity" />
+        <activity android:name=".SupportAuthorCollectionCodeActivity" />
+    </application>
+
+</manifest>

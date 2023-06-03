@@ -3,7 +3,9 @@
     package="com.baima.baimapuzzle">
 
     <application>
-        <activity android:name=".PuzzleActivity"></activity>
+        <activity android:name=".PuzzleHelpActivity"></activity>
+        <activity android:name=".PuzzleRowColSettingActivity" />
+        <activity android:name=".PuzzleActivity" />
     </application>
 
 </manifest>

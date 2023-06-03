@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BgmSoundSettingActivity">
+
+    <TextView
+        android:id="@+id/tv_bgm_setting"
+        android:text="@string/bgm_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_bgm"
+        android:text="@string/bgm_is_played"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bgm_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_reduce_bgm_volume"
+        android:text="@string/reduce_volume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bgm"
+        app:layout_constraintRight_toLeftOf="@+id/tv_bgm_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_bgm_volume"
+        app:layout_constraintLeft_toRightOf="@+id/bt_reduce_bgm_volume"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bgm"
+        app:layout_constraintRight_toLeftOf="@+id/bt_increase_bgm_volume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_increase_bgm_volume"
+        android:text="@string/increase_volume"
+        app:layout_constraintLeft_toRightOf="@+id/tv_bgm_volume"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bgm_volume"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_sound_setting"
+        android:text="@string/sound_setting"
+        app:layout_constraintTop_toBottomOf="@+id/bt_increase_bgm_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/cb_sound"
+        android:text="@string/play_sound"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sound_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_reduce_sound_volume"
+        android:text="@string/reduce_volume"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_sound"
+        app:layout_constraintRight_toLeftOf="@+id/tv_sound_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_sound_volume"
+        app:layout_constraintLeft_toRightOf="@+id/bt_reduce_sound_volume"
+        app:layout_constraintTop_toBottomOf="@+id/cb_sound"
+        app:layout_constraintRight_toLeftOf="@+id/bt_increase_sound_volume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_increase_sound_volume"
+        android:text="@string/increase_volume"
+        app:layout_constraintLeft_toRightOf="@+id/tv_sound_volume"
+        app:layout_constraintTop_toBottomOf="@+id/cb_sound"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

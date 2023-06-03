@@ -7,4 +7,19 @@
     <string name="disrupt_order">打乱顺序</string>
     <string name="order_disrupted">顺序已经打乱。</string>
     <string name="order_adjusted">顺序已经调整好。</string>
+    <string name="bgm_soung_setting">背景音乐音效设置</string>
+    <string name="version_">"版本： "</string>
+    <string name="please_input_row_count">请输入行数。</string>
+    <string name="please_input_column_count">请输入列数。</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="set_row_col">设置行列数</string>
+    <string name="row_count_is_not_empty">行数不能为空</string>
+    <string name="column_count_is_not_empty">列数不能为空</string>
+    <string name="now_the_puzzle_is">拼图现在已经是</string>
+    <string name="view_author_we_chat_collection_code">查看作者微信收款码</string>
+    <string name="we_chat_scan_scan_support_author">微信扫一扫支持作者</string>
+    <string name="view_author_alipay_collection_code">查看作者支付宝收款码</string>
+    <string name="alipay_scan_scan_support_author">支付宝扫一扫支持作者</string>
+    <string name="help">帮助</string>
 </resources>

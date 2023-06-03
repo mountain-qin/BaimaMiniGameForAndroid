@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BgmSound</string>
+    <string name="bgm_setting">背景音乐设置</string>
+    <string name="bgm_is_played">播放背景音乐</string>
+    <string name="reduce_volume">减小音量</string>
+    <string name="increase_volume">增大音量</string>
+    <string name="sound_setting">音效设置</string>
+    <string name="play_sound">播放音效</string>
+    <string name="bgm_sound_setting">背景音乐音效设置</string>
+</resources>

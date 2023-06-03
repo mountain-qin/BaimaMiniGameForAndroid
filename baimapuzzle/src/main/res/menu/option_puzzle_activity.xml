@@ -7,4 +7,19 @@
     <item android:id="@+id/item_disrupt_order"
         android:title="@string/disrupt_order"
         app:showAsAction="ifRoom"/>
+    <item android:id="@+id/item_row_col_setting"
+        android:title="@string/set_row_col"/>
+    <item android:id="@+id/item_bgm_sound_setting"
+        android:title="@string/bgm_soung_setting"/>
+    <item android:id="@+id/item_help"
+        android:title="@string/help"/>
+
+    <item android:id="@+id/item_view_author_we_chat_collection_code"
+        android:title="@string/view_author_we_chat_collection_code"/>
+    <item android:id="@+id/item_we_chat_scan_scan_support_author"
+        android:title="@string/we_chat_scan_scan_support_author"/>
+    <item android:id="@+id/item_view_author_alipay_collection_code"
+        android:title="@string/view_author_alipay_collection_code"/>
+    <item android:id="@+id/item_alipay_scan_scan_support_author"
+        android:title="@string/alipay_scan_scan_support_author"/>
 </menu>

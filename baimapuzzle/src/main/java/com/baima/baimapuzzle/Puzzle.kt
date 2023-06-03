@@ -3,9 +3,9 @@ package com.baima.baimapuzzle
 import kotlin.random.Random
 
 class Puzzle @JvmOverloads constructor(
-    var row: Int = 3,
-    var col: Int = 3,
-    private val empty_grid_title: String = "empty",
+    var row: Int = DEFAULT_ROW,
+    var col: Int = DEFAULT_COL,
+    val emptyGridTitle: String = "empty",
     order:Int= DISORDER
 ) {
 
@@ -30,8 +30,8 @@ class Puzzle @JvmOverloads constructor(
                 orderBlocks[r + 1][c] = (r * col + c + 1).toString()
             }
         }
-        blocks[0][0] = empty_grid_title
-        orderBlocks[0][0] = empty_grid_title
+        blocks[0][0] = emptyGridTitle
+        orderBlocks[0][0] = emptyGridTitle
 
         if(order== DISORDER) {
             disruptOrder()
@@ -218,7 +218,7 @@ if(moved) {
      */
     fun adjustOrder(){
         //重新生成有顺序的；
-        val p =Puzzle(row = row, col=col, empty_grid_title = empty_grid_title,order= ORDER)
+        val p =Puzzle(row = row, col=col, emptyGridTitle = emptyGridTitle,order= ORDER)
         blocks=p.getBlocks()
         orderBlocks=p.orderBlocks
 
@@ -233,5 +233,8 @@ if(moved) {
 
         private val DISORDER=0
         private val ORDER=1
-    }
+
+        val DEFAULT_ROW=3
+        val DEFAULT_COL=3
+            }
 }
