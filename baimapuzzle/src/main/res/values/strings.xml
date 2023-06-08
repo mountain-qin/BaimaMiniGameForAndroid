@@ -8,7 +8,7 @@
     <string name="order_disrupted">顺序已经打乱。</string>
     <string name="order_adjusted">顺序已经调整好。</string>
     <string name="bgm_soung_setting">背景音乐音效设置</string>
-    <string name="version_">"版本： "</string>
+    <string name="version">版本</string>
     <string name="please_input_row_count">请输入行数。</string>
     <string name="please_input_column_count">请输入列数。</string>
     <string name="cancel">取消</string>

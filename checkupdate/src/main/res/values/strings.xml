@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finded_new_version">发现新版本</string>
+    <string name="download">下载</string>
+    <string name="cancel">取消</string>
+    <string name="finded_new_version_">发现新版本</string>
+    <string name="latest_version_now">当前已经是最新版本</string>
+    <string name="ok">确定</string>
+    <string name="install_application">安装应用</string>
+    <string name="occurred_error">发生错误</string>
+</resources>

@@ -23,6 +23,7 @@ import org.jetbrains.anko.toast
 import kotlin.math.abs
 
 class PuzzleActivity : AppCompatActivity() {
+    private val fileDir="BaimaMiniGame"
 
     private var startX: Float? = null
     private var startY: Float? = null
@@ -46,6 +47,9 @@ class PuzzleActivity : AppCompatActivity() {
 
         context = this
         sharedPreferences = getSharedPreferences("config", Context.MODE_PRIVATE)
+
+//        showFirstHelp()
+
         val row = sharedPreferences.getInt(SHARED_PREFERENCE_ROW, Puzzle.DEFAULT_ROW)
         val col = sharedPreferences.getInt(SHARED_PREFERENCE_COL, Puzzle.DEFAULT_COL)
         val emptyGridTitle = getString(R.string.empty)
@@ -53,6 +57,17 @@ class PuzzleActivity : AppCompatActivity() {
 
         addBlocks()
         initBgmSound()
+    }
+
+    private fun showFirstHelp() {
+        val isFirst = sharedPreferences.getBoolean(SHARED_PREFERENCE_IS_FIRST, true)
+        if (isFirst) {
+            startActivity(Intent(context, PuzzleHelpActivity::class.java))
+
+            sharedPreferences.edit()
+                .putBoolean(SHARED_PREFERENCE_IS_FIRST, false)
+                .apply()
+        }
     }
 
     private fun initBgmSound() {
@@ -202,7 +217,8 @@ class PuzzleActivity : AppCompatActivity() {
                     BitmapFactory.decodeResource(
                         resources,
                         R.drawable.we_chat_collection_code_puzzle
-                    )
+                    ),
+                    fileDir
                 )
                     .viewAuthorCollectionCode()
             }
@@ -213,7 +229,8 @@ class PuzzleActivity : AppCompatActivity() {
                     BitmapFactory.decodeResource(
                         resources,
                         R.drawable.we_chat_collection_code_puzzle
-                    )
+                    ),
+                    fileDir
                 )
                     .openScanScanCollectionCode()
             }
@@ -224,7 +241,8 @@ class PuzzleActivity : AppCompatActivity() {
                     BitmapFactory.decodeResource(
                         resources,
                         R.drawable.alipay_collection_code_puzzle
-                    )
+                    ),
+                    fileDir
                 )
                     .viewAuthorCollectionCode()
             }
@@ -235,7 +253,8 @@ class PuzzleActivity : AppCompatActivity() {
                     BitmapFactory.decodeResource(
                         resources,
                         R.drawable.alipay_collection_code_puzzle
-                    )
+                    ),
+                    fileDir
                 )
                     .openScanScanCollectionCode()
             }
@@ -353,6 +372,7 @@ class PuzzleActivity : AppCompatActivity() {
 
         private val SHARED_PREFERENCE_ROW = "puzzle_row"
         private val SHARED_PREFERENCE_COL = "puzzle_col"
+        private val SHARED_PREFERENCE_IS_FIRST = "puzzle_is_first"
 
         private val KEY_ROW = 0
         private val KEY_COL = 1

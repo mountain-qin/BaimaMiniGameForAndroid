@@ -12,14 +12,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        style="@style/Height0_1Style"/>
+
     <CheckBox
         android:id="@+id/cb_bgm"
         android:text="@string/bgm_is_played"
         app:layout_constraintTop_toBottomOf="@+id/tv_bgm_setting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        style="@style/Height0_1Style"/>
 
     <Button
         android:id="@+id/bt_reduce_bgm_volume"
@@ -27,37 +26,33 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_bgm"
         app:layout_constraintRight_toLeftOf="@+id/tv_bgm_volume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+style="@style/VolumeButtonStyle"/>
+
     <TextView
         android:id="@+id/tv_bgm_volume"
         app:layout_constraintLeft_toRightOf="@+id/bt_reduce_bgm_volume"
         app:layout_constraintTop_toBottomOf="@+id/cb_bgm"
         app:layout_constraintRight_toLeftOf="@+id/bt_increase_bgm_volume"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"/>
+        style="@style/ShowVolumeViewStyle"/>
     <Button
         android:id="@+id/bt_increase_bgm_volume"
         android:text="@string/increase_volume"
         app:layout_constraintLeft_toRightOf="@+id/tv_bgm_volume"
         app:layout_constraintTop_toBottomOf="@+id/tv_bgm_volume"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        style="@style/VolumeButtonStyle"/>
 
 
     <TextView
         android:id="@+id/tv_sound_setting"
         android:text="@string/sound_setting"
         app:layout_constraintTop_toBottomOf="@+id/bt_increase_bgm_volume"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        style="@style/Height0_1Style"/>
     <CheckBox
         android:id="@+id/cb_sound"
         android:text="@string/play_sound"
         app:layout_constraintTop_toBottomOf="@+id/tv_sound_setting"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        style="@style/Height0_1Style"/>
 
     <Button
         android:id="@+id/bt_reduce_sound_volume"
@@ -65,21 +60,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb_sound"
         app:layout_constraintRight_toLeftOf="@+id/tv_sound_volume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        style="@style/VolumeButtonStyle"/>
     <TextView
         android:id="@+id/tv_sound_volume"
         app:layout_constraintLeft_toRightOf="@+id/bt_reduce_sound_volume"
         app:layout_constraintTop_toBottomOf="@+id/cb_sound"
         app:layout_constraintRight_toLeftOf="@+id/bt_increase_sound_volume"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"/>
+        style="@style/ShowVolumeViewStyle"/>
     <Button
         android:id="@+id/bt_increase_sound_volume"
         android:text="@string/increase_volume"
         app:layout_constraintLeft_toRightOf="@+id/tv_sound_volume"
         app:layout_constraintTop_toBottomOf="@+id/cb_sound"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        style="@style/VolumeButtonStyle"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

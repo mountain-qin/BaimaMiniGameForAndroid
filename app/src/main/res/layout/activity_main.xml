@@ -6,8 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<ListView
-    android:id="@+id/lv_game"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_bottom_navigation"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

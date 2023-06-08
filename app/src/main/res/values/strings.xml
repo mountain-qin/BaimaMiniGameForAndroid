@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">BaimaMiniGame</string>
+    <string name="app_name">拜玛小游戏</string>
     <string name="baima_puzzle">拜玛拼图</string>
+    <string name="mini_game">小游戏</string>
+    <string name="more">更多</string>
+    <string name="check_update">检查更新</string>
+    <string name="version">版本</string>
+    <string name="denying_permission_message">拒绝权限将无法正常使用本应用。</string>
 </resources>

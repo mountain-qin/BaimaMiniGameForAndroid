@@ -35,6 +35,10 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation "org.jetbrains.anko:anko-common:$anko_version"
     implementation project(':baimapuzzle')
+    implementation project(path:':checkupdate')
+
+    implementation "org.jetbrains.anko:anko-common:$anko_version"
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
 }
